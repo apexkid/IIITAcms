@@ -17,7 +17,7 @@ class Sanitize
 	public function cleanHtml($str)
 	{
 		$this -> s  = str_replace("'", "", $str );
-		$this -> s  = str_replace('"', '', $str );
+		$this -> s  = str_replace('"', '', $this -> s);
 		$this -> s  = str_replace("<script>", "</script/>", $str);
 		return $this -> s;
 	}
@@ -25,7 +25,7 @@ class Sanitize
 	public function cleanJs($str)
 	{
 		$this -> s = str_replace("'", "", $str);
-		$this -> s = str_replace('"', '', $str);
+		$this -> s = str_replace('"', '', $this -> s);
 		return $this -> s;
 	}
 	
