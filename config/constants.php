@@ -1,7 +1,7 @@
 <?php
 	define('SITE_ROOT', dirname(dirname(__FILE__)));
-	define ('HOST', 'localhost');
-	define ('USER', 'root');
+	define ('HOST', '');
+	define ('USER', '');
 	define ('PASS', '');
 	define ('DBNAME', '');
 	define('PDO_DSN', 'mysql:host=' . HOST . ';dbname=' . DBNAME);
@@ -9,7 +9,7 @@
 	define ('SITE_TITLE', '');
 	
 //ftp credentials for dir creation and file writing	
-	define ('FTP_USER','root');
+	define ('FTP_USER','');
 	define ('FTP_PASS','');
 	
 	
